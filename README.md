@@ -1,73 +1,103 @@
-# Welcome to your Lovable project
+# OpenInsight Landing Page
 
-## Project info
+This repository contains the source code for the landing page of **OpenInsight**, a minimalist Chrome extension designed for clarity and truth.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🌟 About OpenInsight
 
-## How can I edit this code?
+OpenInsight is a Chrome extension built on the design philosophy of **Epistemic Minimalism**. It functions by attaching a smart pop-up to a user's highlighted text, allowing them to either explain the content or fact-check it instantly.
 
-There are several ways of editing your application.
+### Primary Goals
 
-**Use Lovable**
+- **Instant Verification:** Empower users to verify claims and facts the moment they encounter them.
+- **Clarity through Explanation:** Provide clear, simplified explanations of complex text.
+- **Promote Media Literacy:** Foster critical thinking habits by making verification a seamless part of browsing.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### Key Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Smart Pop-up Interface:** Minimalist UI appearing on text selection (10-2000 chars).
+- **Structured Insights:** Clear verdicts with clickable sources for fact-checking.
+- **Advanced Customization:** Select preferred AI models via [OpenRouter](https://openrouter.ai/).
+- **Security & Privacy:** API keys are stored locally and encrypted using the Web Crypto API.
 
-**Use your preferred IDE**
+## 🛠 Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+The landing page is built using:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **React 18** & **Vite**
+- **Tailwind CSS** for styling
+- **Framer Motion** for animations
+- **Radix UI** primitives
+- **Lucide React** for iconography
 
-Follow these steps:
+## 🏁 Getting Started
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Prerequisites
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Ensure you have [Node.js](https://nodejs.org/) (v18+) installed.
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Installation
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+1. Clone the repository:
 
-**Edit a file directly in GitHub**
+   ```bash
+   git clone https://github.com/SaintsWebnology/openinsight-web.git
+   cd openinsight-web
+   ```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-**Use GitHub Codespaces**
+### Running the Project
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- **Development Server:**
 
-## What technologies are used for this project?
+  ```bash
+  npm run dev
+  ```
 
-This project is built with:
+  The site will be available at `http://localhost:8080`.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Build for Production:**
 
-## How can I deploy this project?
+  ```bash
+  npm run build
+  ```
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+  The production-ready files will be in the `dist/` directory.
 
-## Can I connect a custom domain to my Lovable project?
+- **Development Build:**
 
-Yes, you can!
+  ```bash
+  npm run build:dev
+  ```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- **Preview Production Build:**
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+  ```bash
+  npm run preview
+  ```
+
+- **Check for Issues:**
+  ```bash
+  npm run lint
+  ```
+
+## 👥 Target Audience
+
+- **General News Readers** looking for clarity in daily information.
+- **Students & Researchers** needing quick explanations of complex content.
+- **Journalists & Fact-checkers** requiring rapid verification.
+
+## 🔒 Security & Privacy
+
+OpenInsight is designed with a "Security-First" architecture:
+
+- **Local Storage:** All sensitive data (like API keys) stays on the user's device.
+- **Encryption:** Uses the Web Crypto API for local encryption.
+- **Sandboxing:** Background Service Workers ensure isolated process execution.
+
+---
+
+_OpenInsight - Stripping away the clutter, focusing on clarity and truth._
