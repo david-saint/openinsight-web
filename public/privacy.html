@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy - OpenInsight</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 0 20px;
+        background-color: #fff;
+      }
+      h1 {
+        border-bottom: 2px solid #eee;
+        padding-bottom: 10px;
+        font-weight: 700;
+      }
+      h2 {
+        margin-top: 30px;
+        color: #000;
+        font-size: 1.4em;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+      .highlight {
+        background: #f4f4f4;
+        padding: 15px;
+        border-left: 4px solid #333;
+        margin: 20px 0;
+      }
+      footer {
+        margin-top: 50px;
+        font-size: 0.8em;
+        color: #777;
+        border-top: 1px solid #eee;
+        padding-top: 20px;
+      }
+      code {
+        background: #f1f1f1;
+        padding: 2px 5px;
+        border-radius: 3px;
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Privacy Policy</h1>
+    <p><strong>Effective Date:</strong> January 3, 2026</p>
+    <p>
+      OpenInsight ("we," "our," or "the Extension") is committed to **Epistemic
+      Minimalism**. We believe that clarity and truth should not come at the
+      cost of your privacy. This policy explains how we handle data and why your
+      security is our priority.
+    </p>
+
+    <div class="highlight">
+      <strong>The Core Principle:</strong> OpenInsight is a "Zero-Knowledge"
+      architecture. We do not own servers that store your personal data, your
+      browsing history, or your API keys.
+    </div>
+
+    <h2>1. Data Collection & Usage</h2>
+    <p>
+      OpenInsight only processes data when you explicitly interact with it
+      (i.e., when you highlight text and click an action).
+    </p>
+    <ul>
+      <li>
+        <strong>Selected Text:</strong> When you highlight a sentence (10–2000
+        characters) and request an "Explanation" or "Fact-Check," that specific
+        snippet is sent to OpenRouter via their API.
+      </li>
+      <li>
+        <strong>API Keys:</strong> We do not collect or see your OpenRouter API
+        key. It is stored exclusively on your local machine.
+      </li>
+      <li>
+        <strong>No Tracking:</strong> We do not use Google Analytics, cookies,
+        or any tracking pixels within the extension.
+      </li>
+    </ul>
+
+    <h2>2. Storage & Security</h2>
+    <p>
+      We prioritize the security of your credentials through modern
+      cryptographic standards:
+    </p>
+    <ul>
+      <li>
+        <strong>Local Storage:</strong> Your settings and API keys are stored
+        using <code>chrome.storage.local</code>.
+      </li>
+      <li>
+        <strong>Encryption:</strong> API keys are encrypted using the
+        <strong>Web Crypto API</strong> before being saved. This ensures that
+        even other processes on your machine cannot easily access your key.
+      </li>
+      <li>
+        <strong>Sandboxing:</strong> The extension operates in a sandboxed
+        environment to prevent cross-site scripting (XSS) or malicious actors
+        from intercepting your data.
+      </li>
+    </ul>
+
+    <h2>3. Third-Party Services (OpenRouter)</h2>
+    <p>
+      OpenInsight functions as an interface for <strong>OpenRouter</strong>.
+      When you use the extension, the text you highlight is sent to the Large
+      Language Model (LLM) you have selected via OpenRouter. This data is
+      subject to the
+      <a href="https://openrouter.ai/terms" target="_blank"
+        >OpenRouter Privacy Policy</a
+      >.
+    </p>
+    <p>
+      We recommend reviewing the privacy settings of the specific model provider
+      (e.g., OpenAI, Anthropic, Google) you choose within the OpenRouter
+      dashboard.
+    </p>
+
+    <h2>4. Permissions Justification</h2>
+    <p>To function, the extension requires the following permissions:</p>
+    <ul>
+      <li>
+        <code>activeTab</code>: To access the text you highlight on the page you
+        are currently viewing.
+      </li>
+      <li>
+        <code>storage</code>: To save your theme preferences and your encrypted
+        API key locally.
+      </li>
+      <li>
+        <code>host permissions</code>: To allow the extension to provide
+        insights across various websites you visit.
+      </li>
+    </ul>
+
+    <h2>5. GDPR Compliance (EU Users)</h2>
+    <p>
+      Since OpenInsight does not collect, store, or transmit personal data to
+      its own servers, we do not act as a "Data Controller" for your browsing
+      habits. You have full control over your data: to "delete" your data,
+      simply uninstall the extension or clear the extension's local storage in
+      your browser settings.
+    </p>
+
+    <h2>6. Changes to This Policy</h2>
+    <p>
+      We may update this policy occasionally to reflect changes in browser
+      requirements or extension features. Updates will be noted by the
+      "Effective Date" at the top of this page.
+    </p>
+
+    <h2>7. Contact</h2>
+    <p>
+      If you have questions regarding this policy or our security practices,
+      please contact us through our official GitHub repository or the Chrome Web
+      Store support channel.
+    </p>
+
+    <footer>
+      &copy; 2026 OpenInsight. Developed in Poland. Built for Truth.
+    </footer>
+  </body>
+</html>
