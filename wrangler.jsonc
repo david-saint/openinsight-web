@@ -2,6 +2,7 @@
   "name": "openinsight-web",
   "compatibility_date": "2026-01-02",
   "assets": {
-    "directory": "./dist"
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
   }
 }
