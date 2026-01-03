@@ -46,7 +46,7 @@ export const Demo = () => {
 
         <motion.div variants={itemVariants} className="max-w-4xl mx-auto">
           {/* Mock browser window */}
-          <div className="bg-card rounded-2xl border border-border shadow-2xl overflow-hidden">
+          <div className="bg-card rounded-2xl border border-border shadow-2xl h-[500px] overflow-hidden">
             {/* Browser chrome */}
             <div className="bg-muted/50 px-4 py-3 flex items-center gap-2 border-b border-border">
               <div className="flex gap-1.5">
@@ -77,7 +77,7 @@ export const Demo = () => {
                 initial={{ opacity: 0, y: 10, scale: 0.95 }}
                 animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
                 transition={{ delay: 0.8, duration: 0.4 }}
-                className="absolute left-8 md:left-20 top-24 bg-card/80 backdrop-blur-lg rounded-xl border border-border/50 shadow-xl w-80 overflow-hidden"
+                className="absolute left-8 md:left-20 top-24 bg-card/80 backdrop-blur-lg rounded-xl border border-border/50 shadow-xl w-80 max-sm:w-72 overflow-hidden"
               >
                 {/* Tabs */}
                 <div className="flex border-b border-border">
