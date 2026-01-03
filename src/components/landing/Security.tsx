@@ -110,7 +110,7 @@ export const Security = () => {
             <Shield className="w-5 h-5 text-primary" />
             <span className="text-sm text-muted-foreground">
               Open source & auditable on{" "}
-              <a href="https://github.com/david-saint/openinsight" className="text-foreground underline underline-offset-2 hover:text-primary transition-colors">
+              <a href="https://github.com/david-saint/openinsight" className="text-foreground underline underline-offset-2 hover:text-primary transition-colors" target="_blank">
                 GitHub
               </a>
             </span>

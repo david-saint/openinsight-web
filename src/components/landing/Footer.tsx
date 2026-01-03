@@ -17,13 +17,15 @@ export const Footer = () => {
           {/* Links */}
           <div className="flex items-center gap-6">
             <a
-              href="#"
+              href="https://openinsight.dev/privacy"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Privacy
             </a>
             <a
-              href="#"
+              href="https://github.com/david-saint/openinsight"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               GitHub
