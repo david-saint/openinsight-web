@@ -100,7 +100,6 @@
 
   html {
     @apply scrollbar-thin scrollbar-thumb-primary/60 scrollbar-track-transparent;
-    scroll-behavior: smooth;
   }
 
   body {

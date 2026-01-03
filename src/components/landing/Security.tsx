@@ -1,5 +1,6 @@
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { useIsMobile } from "@/hooks/use-mobile";
 import { Lock, Shield, Eye, Server } from "lucide-react";
 
 const securityFeatures = [
@@ -30,6 +31,7 @@ const securityFeatures = [
 ];
 
 export const Security = () => {
+  const isMobile = useIsMobile();
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const { scrollYProgress } = useScroll({
@@ -37,7 +39,7 @@ export const Security = () => {
     offset: ["start end", "end start"],
   });
 
-  const backgroundY = useTransform(scrollYProgress, [0, 1], [0, -100]);
+  const backgroundY = useTransform(scrollYProgress, [0, 1], isMobile ? [0, 0] : [0, -100]);
 
   return (
     <section
