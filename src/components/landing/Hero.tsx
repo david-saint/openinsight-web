@@ -65,7 +65,7 @@ export const Hero = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <a
-              href="https://chrome.google.com/webstore"
+              href="https://chromewebstore.google.com/detail/ffpomdfkclbbimedhobddfbimnpfcooc?utm_source=item-share-cb"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-[0.5rem] text-base font-medium hover:opacity-90 transition-all glow-sm hover:glow"

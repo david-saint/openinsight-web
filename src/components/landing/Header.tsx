@@ -43,7 +43,7 @@ export const Header = () => {
         </nav>
 
         <a
-          href="https://chrome.google.com/webstore"
+          href="https://chromewebstore.google.com/detail/ffpomdfkclbbimedhobddfbimnpfcooc?utm_source=item-share-cb"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-xs font-medium hover:opacity-90 transition-opacity"

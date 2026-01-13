@@ -45,7 +45,7 @@ export const CTA = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <a
-              href="https://chrome.google.com/webstore"
+              href="https://chromewebstore.google.com/detail/ffpomdfkclbbimedhobddfbimnpfcooc?utm_source=item-share-cb"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-10 py-5 rounded-[0.5rem] text-base font-medium hover:opacity-90 transition-all glow hover:scale-[1.02]"
