@@ -1,4 +1,4 @@
-import { SparkleIcon, CoffeeIcon } from "@/components/ui/Icons";
+import { SparkleIcon, CoffeeIcon, OpenInsightLogo } from "@/components/ui/Icons";
 import { Github, Heart, Twitter } from "lucide-react";
 
 export const Footer = () => {
@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <img src="/icons/icon-48.png" alt="OpenInsight" className="w-5 h-5" />
+            <OpenInsightLogo className="w-5 h-5" aria-hidden="true" />
             <span className="font-medium font-serif">OpenInsight</span>
             <span className="text-muted-foreground text-xs">•</span>
             <span className="text-muted-foreground text-xs">Epistemic Clarity Engine</span>

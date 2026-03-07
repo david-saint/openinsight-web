@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { SparkleIcon, ChromeIcon } from "@/components/ui/Icons";
+import { SparkleIcon, ChromeIcon, OpenInsightLogo } from "@/components/ui/Icons";
 
 export const Hero = () => {
   const isMobile = useIsMobile();
@@ -33,7 +33,7 @@ export const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 mb-8"
           >
-            <img src="/icons/icon-16.png" alt="OpenInsight" className="w-4 h-4" />
+            <OpenInsightLogo className="w-4 h-4" aria-hidden="true" />
             <span className="text-sm text-primary font-medium">Epistemic Clarity Engine</span>
           </motion.div>
 

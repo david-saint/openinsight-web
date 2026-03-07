@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { SparkleIcon, ChromeIcon } from "@/components/ui/Icons";
+import { SparkleIcon, ChromeIcon, OpenInsightLogo } from "@/components/ui/Icons";
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,7 +26,7 @@ export const Header = () => {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <img src="/icons/icon-32.png" alt="OpenInsight" className="w-6 h-6" />
+          <OpenInsightLogo className="w-6 h-6" aria-hidden="true" />
           <span className="font-medium font-serif text-lg tracking-tight">OpenInsight</span>
         </div>
         
