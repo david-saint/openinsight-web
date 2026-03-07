@@ -86,17 +86,11 @@ export const Customize = () => {
             className="relative"
           >
             <div
-              className={`rounded-2xl border shadow-2xl overflow-hidden transition-colors duration-300 backdrop-blur-lg ${
-                themeMode === "dark"
-                  ? "bg-card/80 border-border/60"
-                  : "bg-card/80 border-border/50"
-              }`}
+              className={`rounded-2xl border shadow-2xl overflow-hidden transition-colors duration-300 backdrop-blur-lg bg-card/80 border-border/60`}
             >
               {/* Header */}
               <div
-                className={`px-6 py-4 border-b flex items-center justify-center gap-2 ${
-                  themeMode === "dark" ? "border-border" : "border-border"
-                }`}
+                className={`px-6 py-4 border-b flex items-center justify-center gap-2 border-border`}
               >
                 <OpenInsightLogo className="w-5 h-5" aria-hidden="true" />
                 <span
@@ -121,22 +115,10 @@ export const Customize = () => {
                     Intelligence
                   </label>
                   <div className="grid grid-cols-2 gap-3">
-                    <div
-                      className={`rounded-lg px-4 py-3 text-sm ${
-                        themeMode === "dark"
-                          ? "bg-muted text-foreground"
-                          : "bg-muted text-foreground"
-                      }`}
-                    >
+                    <div className="rounded-lg px-4 py-3 text-sm bg-muted text-foreground">
                       GPT-4 Turbo
                     </div>
-                    <div
-                      className={`rounded-lg px-4 py-3 text-sm ${
-                        themeMode === "dark"
-                          ? "bg-muted text-foreground"
-                          : "bg-muted text-foreground"
-                      }`}
-                    >
+                    <div className="rounded-lg px-4 py-3 text-sm bg-muted text-foreground">
                       Claude 3.5 Sonnet
                     </div>
                   </div>
@@ -152,11 +134,7 @@ export const Customize = () => {
                     <Palette className="w-3 h-3 inline mr-1" />
                     Appearance
                   </label>
-                  <div
-                    className={`rounded-lg p-1 flex ${
-                      themeMode === "dark" ? "bg-muted" : "bg-muted"
-                    }`}
-                  >
+                  <div className="rounded-lg p-1 flex bg-muted">
                     {(["light", "dark"] as const).map((theme) => (
                       <button
                         key={theme}
@@ -166,8 +144,6 @@ export const Customize = () => {
                             ? themeMode === "dark"
                                ? "bg-background text-foreground"
                                : "bg-card text-foreground shadow-sm"
-                            : themeMode === "dark"
-                            ? "text-muted-foreground"
                             : "text-muted-foreground"
                         }`}
                       >
