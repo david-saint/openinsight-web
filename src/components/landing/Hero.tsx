@@ -33,7 +33,7 @@ export const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 mb-8"
           >
-            <OpenInsightLogo className="w-4 h-4" />
+            <OpenInsightLogo className="w-4 h-4" aria-hidden="true" />
             <span className="text-sm text-primary font-medium">Epistemic Clarity Engine</span>
           </motion.div>
 

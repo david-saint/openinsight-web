@@ -26,7 +26,7 @@ export const Header = () => {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <OpenInsightLogo className="w-6 h-6" />
+          <OpenInsightLogo className="w-6 h-6" aria-hidden="true" />
           <span className="font-medium font-serif text-lg tracking-tight">OpenInsight</span>
         </div>
         

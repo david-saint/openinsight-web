@@ -98,7 +98,7 @@ export const Customize = () => {
                   themeMode === "dark" ? "border-[#2a3040]" : "border-border"
                 }`}
               >
-                <OpenInsightLogo className="w-5 h-5" />
+                <OpenInsightLogo className="w-5 h-5" aria-hidden="true" />
                 <span
                   className={`font-medium font-serif ${
                     themeMode === "dark" ? "text-white" : "text-foreground"
