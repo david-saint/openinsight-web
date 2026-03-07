@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { ChromeIcon, SparkleIcon } from "@/components/ui/Icons";
+import { ChromeIcon, SparkleIcon, OpenInsightLogo } from "@/components/ui/Icons";
 
 export const CTA = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -25,7 +25,7 @@ export const CTA = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 mb-8"
           >
-            <img src="/icons/icon-128.png" alt="OpenInsight" className="w-8 h-8" />
+            <OpenInsightLogo className="w-8 h-8" />
           </motion.div>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-6">

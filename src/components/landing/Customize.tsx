@@ -2,6 +2,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Settings, Palette, Sparkles, Sliders } from "lucide-react";
 import { useTheme, ACCENT_COLORS } from "@/hooks/use-theme";
+import { OpenInsightLogo } from "@/components/ui/Icons";
 
 export const Customize = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -97,7 +98,7 @@ export const Customize = () => {
                   themeMode === "dark" ? "border-[#2a3040]" : "border-border"
                 }`}
               >
-                <img src="/icons/icon-48.png" alt="OpenInsight" className="w-5 h-5" />
+                <OpenInsightLogo className="w-5 h-5" />
                 <span
                   className={`font-medium font-serif ${
                     themeMode === "dark" ? "text-white" : "text-foreground"
