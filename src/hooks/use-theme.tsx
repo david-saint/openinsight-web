@@ -100,6 +100,28 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       "--glow",
       `${accent.hsl.h} ${Math.min(accent.hsl.s + 10, 100)}% ${accent.hsl.l + 5}%`
     );
+
+    // Dynamic base colors derived from accent hue
+    const hue = accent.hsl.h;
+    if (themeMode === "dark") {
+      root.style.setProperty("--background", `${hue} 20% 8%`);
+      root.style.setProperty("--foreground", `${hue} 20% 95%`);
+      root.style.setProperty("--muted", `${hue} 15% 18%`);
+      root.style.setProperty("--muted-foreground", `${hue} 10% 55%`);
+      root.style.setProperty("--secondary", `${hue} 15% 15%`);
+      root.style.setProperty("--border", `${hue} 15% 20%`);
+      root.style.setProperty("--input", `${hue} 15% 20%`);
+      root.style.setProperty("--surface", `${hue} 18% 10%`);
+    } else {
+      root.style.setProperty("--background", `${hue} 20% 98%`);
+      root.style.setProperty("--foreground", `${hue} 15% 12%`);
+      root.style.setProperty("--muted", `${hue} 10% 92%`);
+      root.style.setProperty("--muted-foreground", `${hue} 10% 45%`);
+      root.style.setProperty("--secondary", `${hue} 15% 94%`);
+      root.style.setProperty("--border", `${hue} 15% 88%`);
+      root.style.setProperty("--input", `${hue} 15% 88%`);
+      root.style.setProperty("--surface", `${hue} 20% 99%`);
+    }
   }, [accentColor, themeMode]);
 
   // Apply theme mode (dark/light class)
